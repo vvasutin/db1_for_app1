@@ -9,11 +9,11 @@ with open('dbshem.sql') as f:
 cur = connection.cursor()
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('First Post', 'Content for the first post')
+            ('Pervaya citata', 'Avtor, kniga')
             )
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('Second Post', 'Content for the second post')
+            ('Vtoraya citata', 'Avtor, vtoraya kniga')
             )
 
 connection.commit()
